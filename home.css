@@ -1,0 +1,112 @@
+/* Header navbar */
+@font-face {
+    font-family: "Poppins";
+    src: url("Typographies/Poppins/Poppins-SemiBold.ttf");
+}
+
+.navbar{
+    font-family: "Poppins", SemiBold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 115px;
+    margin: 0px 75px 0px 75px;
+}
+#text{
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+}
+#text_color:hover{
+     color: #039F4E; /* changement de couleur en hover du text de la nav barre rappelant la couleur principal du site  */
+    cursor: pointer;
+}
+#logo{
+    width: 90px;
+}
+.country_menu{
+    margin-top: 170px;
+}
+.country_selector{
+    cursor: pointer;
+    display: flex;
+}
+
+.country_menu ul{
+    margin-top: 10px;
+    padding: 0;
+    background-color: white;
+    border: 1px solid #f8f8f8;
+    border-radius: 4px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    visibility: hidden;
+    
+}
+
+.country_menu ul li{  /* ul désigne une liste li est un élément de la liste */
+    list-style: none; /* cacher les point de la liste */
+    display: flex;
+    justify-content: space-between;
+}
+
+.country_menu ul li a{ /* cacher le surlignage des liens et rendre plus beau visuellement */
+    text-decoration: none;
+    width: 155px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.country_menu ul li:hover { /* rajouter la couleur pendant que la souris passe dessu */
+    background-color: #f2f2f2;
+}
+
+.country_menu:hover ul{ /* afficher le choix du pays en passant la souris sur la box */
+ visibility: visible;
+}
+
+.country_menu ul li a:before{ /* rajoute les drapeau pour les pays à l'intérieur de la box */
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 14.5px;
+    width: 37px;
+    height: 25px;
+    border-radius: 4px;
+}
+.country_selector:after{  /* rajoute la petite fleche à coté de la séléction de pays */
+    content: "";
+    margin: 8px 8px;
+    display: inline-block;
+    background-image: url("Images/path.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 8px;
+}
+.country_selector:before{  /* rajoute le drapeau pour le pays afficher */
+    content: "";
+    display: inline-block;
+    background-image: url("Images/flagSA.png");
+    background-size: contain;
+    margin-right: 14.5px;
+    width: 37px;
+    height: 25px;
+    border-radius: 4px;
+}
+/* les commandes ci-dessous servent à afficher le bon drapeau dans la box de séléction du pays */
+.de:before{
+    background-image: url("Images/flagDE.png"); 
+}
+.fr:before{
+    background-image: url("Images/flagFR.png"); 
+}
+.sa:before{
+    background-image: url("Images/flagSA.png"); 
+}
+.ar:before{
+    background-image: url("Images/FlagAR.webp"); 
+}
+
+/* header Image camion */
