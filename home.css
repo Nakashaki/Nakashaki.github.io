@@ -8,7 +8,6 @@
 }
 body{
     margin: 0px;
-    height: 700vh;
 }
 
 a{
@@ -206,9 +205,161 @@ nav {
     padding:1vh 5vh;
 }
 
+
+
+/* current range of vehicules */
+
+.vehicules_title{
+    width: 100%;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.vehicules{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 79%;
+    height: 60vh;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0vh 20vh 0vh 20vh;
+}
+
+.vehicules .croner{
+    display: flex;
+    height: 26vh;
+    width: 20vw;
+    background-position: 50% 20%;
+    background-color: #039F4E;
+    background-image: url(Images/cronertruck.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.croner .vehicules_text{
+    height: 40%;
+    width: 100%;
+    display: inline-block;
+    align-self: flex-end;
+    text-align: left;
+    background-color: white;
+    border-radius: 0 0 9px 9px;
+    padding: 0 2vw;
+
+}
+
+.vehicules .croner:hover, .nqr:hover{
+    background-size: 25vh;
+}
+/* séparation de l'intéraction en deux parce que les véhicules n'ont pas la même taille */
+.vehicules .ftr:hover, .dyna:hover, .doblo:hover{
+    background-size: 20vh;
+}
+
+.vehicules .ftr{
+    display: flex;
+    height: 26vh;
+    width: 20vw;
+    background-position: 50% 20%;
+    background-color: #039F4E;
+    background-image: url(Images/ftrtruck.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.ftr .vehicules_text{
+    height: 40%;
+    width: 100%;
+    display: inline-block;
+    align-self: flex-end;
+    text-align: left;
+    background-color: white;
+    border-radius: 0 0 9px 9px;
+    padding: 0 2vw;
+
+}
+
+
+.vehicules .nqr{
+    display: flex;
+    height: 26vh;
+    width: 20vw;
+    background-position: 50% 20%;
+    background-color: #039F4E;
+    background-image: url(Images/nqrtruck.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.nqr .vehicules_text{
+    height: 40%;
+    width: 100%;
+    display: inline-block;
+    align-self: flex-end;
+    text-align: left;
+    background-color: white;
+    border-radius: 0 0 9px 9px;
+    padding: 0 2vw;
+
+}
+
+.vehicules .dyna{
+    display: flex;
+    height: 26vh;
+    width: 20vw;
+    background-position: 50% 20%;
+    background-color: #039F4E;
+    background-image: url(Images/dynatruck.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.dyna .vehicules_text{
+    height: 40%;
+    width: 100%;
+    display: inline-block;
+    align-self: flex-end;
+    text-align: left;
+    background-color: white;
+    border-radius: 0 0 9px 9px;
+    padding: 0 2vw;
+
+}
+
+
+.vehicules .doblo{
+    display: flex;
+    height: 26vh;
+    width: 20vw;
+    background-position: 50% 20%;
+    background-color: #039F4E;
+    background-image: url(Images/doblotruck.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.doblo .vehicules_text{
+    height: 40%;
+    width: 100%;
+    display: inline-block;
+    align-self: flex-end;
+    text-align: left;
+    background-color: white;
+    border-radius: 0 0 9px 9px;
+    padding: 0 2vw;
+
+}
+
 @media screen and (max-width:720px) {
     nav{
         display: none;
     }
 }
-/* fin du header camion */
