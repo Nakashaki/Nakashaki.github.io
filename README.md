@@ -11,3 +11,7 @@ Modification de la navbar et création de la bannière avec comme vidéo de réf
 Etape 3
 
 Création de la div "current range of vehicules" avec une intéraction au survol de chaque véhicules
+
+Etape 4
+
+Création de la div sur les informations de l'entreprise et ajout d'une ombre sur la navbar
