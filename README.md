@@ -7,6 +7,5 @@ Etape 1 création de la nav bar avec ajout d'un changement de couleur sur le tex
 
 Etape 2
 
-Modification de la navbar et création de la bannière
-https://www.youtube.com/watch?v=cf4mJTXh5sE
+Modification de la navbar et création de la bannière avec comme vidéo de référence "https://www.youtube.com/watch?v=cf4mJTXh5sE"
 
