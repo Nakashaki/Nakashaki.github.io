@@ -165,7 +165,7 @@ nav {
 .landing{
     height: 60vh;
     width: 100%;
-    background-image: url(Images/truck.png);
+    background-image: url(Images/Truck.png);
     background-position:  right;
     background-size: auto 600px ;
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ nav {
     flex-direction: column;
     height: 100%;
     width: 56vw;
-    background-image: url(Images/Rectangle.svg);
+    background-image: url(Images/rectangle.svg);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
