@@ -253,7 +253,7 @@ nav {
 }
 
 .croner .vehicules_text{
-    height: 40%;
+    height: 45%;
     width: 100%;
     display: inline-block;
     align-self: flex-end;
@@ -265,7 +265,7 @@ nav {
 }
 
 .vehicules_text h2{
-    width: 95%;
+    width: 100%;
     height: 100%;
 }
 
@@ -292,7 +292,7 @@ nav {
 }
 
 .ftr .vehicules_text{
-    height: 40%;
+    height: 45%;
     width: 100%;
     display: inline-block;
     align-self: flex-end;
@@ -318,7 +318,7 @@ nav {
 }
 
 .nqr .vehicules_text{
-    height: 40%;
+    height: 45%;
     width: 100%;
     display: inline-block;
     align-self: flex-end;
@@ -343,7 +343,7 @@ nav {
 }
 
 .dyna .vehicules_text{
-    height: 40%;
+    height: 45%;
     width: 100%;
     display: inline-block;
     align-self: flex-end;
@@ -368,7 +368,7 @@ nav {
 }
 
 .doblo .vehicules_text{
-    height: 40%;
+    height: 45%;
     width: 100%;
     display: inline-block;
     align-self: flex-end;
@@ -561,19 +561,118 @@ nav {
 }
 
 .full_service_container .button{
-        transform:translateY(16px)
+        transform:translateY(10px);
+        height: 5vh;
+        
 }
 
 
+/* contack us */
+
+.contact{
+    display: flex;
+    margin-top: 5vw;
+    padding-left: 3vw;
+}
+.contact .info{
+    width: 100%;
+}
+
+.info .title{
+    font-size: 1.5rem;
+}
+
+.info .subtitle{
+    width: 50%;
+    font-size: 0.9rem;
+}
+
+.info .text{
+    font-size: 1rem;
+    color: #393939;
+    width: 32%;
+    line-height: 3vh;
+}
+
+.text p{
+    margin: 0;
+}
+.contact .form_body{
+    width: 100%;
+}
+
+.form_body .form_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 4vw;
+    grid-row-gap: 0px;
+}
 
 
+.form_container .profile_choice{
+    accent-color: black;
+    width: 10%;
+}
+.form_container .title_choice{
+    accent-color: black;
+    width: 10%;
+}
+.form_body .form_container{
+    width: 70%;
+}
+.form_body input, .select_country{
+    border: none;
+    border-bottom: solid 2px #A5A5A5;
+    width: 100%;
 
+}
 
+.country .label_country{
+    display: inline-block;
+}
 
+.form_body .label_title {
+    display:block;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
 
+.form_body .profile_title{
+    display: flex;
+    width: 100%;
+}
+
+.form_body .email_adress{
+    grid-column: 1/3;
+}
+
+.form_body .message{
+    grid-column: 1/3;
+}
+
+.form_body .checkbox{
+    grid-column: 1/3;
+}
+.form_body .submit{
+    padding-top: 2vh;
+}
+
+.form_body .submit_button{
+    font-weight: 600;
+    background-color: #039F4E;
+    font-size: 1.1rem;
+    color: white;
+    height: 5vh;
+}
 
 @media screen and (max-width:1440px) {
-    /* nav{
-        display: none;
-    } */
+    /* header image camion */
+    .full_service_container .button{
+        transform:translateY(5vh);
+    }
+    /* contactus */
+    .contact .info{
+        width: 70%;
+    }
 }
