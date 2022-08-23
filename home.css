@@ -197,7 +197,7 @@ nav {
     font-size: 48px;
     line-height: 60px;
     color: white;
-    margin: 0;
+    width: 50%;
 }
 
 
@@ -205,7 +205,7 @@ nav {
     font-size: 18px;
     color: white;
     line-height: 23px;
-    margin: 0;
+    width: 50%;
 }
 
 .landing .download_button{
@@ -224,7 +224,6 @@ nav {
 
 
 .vehicules{
-    /* transform:scale(0.8); */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -262,8 +261,12 @@ nav {
     background-color: white;
     border-radius: 0 0 9px 9px;
     padding: 0 2vw;
-    line-height: 2vh;
 
+}
+
+.vehicules_text h2{
+    width: 95%;
+    height: 100%;
 }
 
 .vehicules .croner:hover, .nqr:hover{
@@ -378,27 +381,32 @@ nav {
 
 /* chiffres importants et description*/
 .description{
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 10vh;
     display: flex;
-    width: 100vw;
-    min-width: 50vw;
-    /* padding: 0 4vw; */
-    flex-wrap: wrap;
+    width: 94vw;
+    padding: 0 3vw;
 }
 
 .driver{
-    margin-left: 52vh;
     border-radius: 9px;
-    background-image: url(Images/driver.png);
-    width: 33vw;
+    width: 60vh;
     height: 60vh;
     background-repeat: no-repeat;
 }
 
+.description_content *{
+    margin: 1vh 0;
+}
+.description_content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-envenly;
+}
 
 .description .description_title{
-    margin: 0;
     line-height: 60px;
     font-size: 40px;   
 }
@@ -407,11 +415,10 @@ nav {
     font-size: 20px;
     color: #039F4E;
     line-height: 30px;
-    margin: 0;
 }
 
 .description .description_text{
-    margin: 0;
+    max-width: 75%;
     line-height: 20px;
 }
 
@@ -424,6 +431,10 @@ nav {
     grid-row-gap: 20px;
     width: 50%;
     padding: 3vw;
+}
+
+.numbers .numbers_title{
+    font-size: 30px;
 }
 
 .numbers_subtitle{
@@ -443,8 +454,79 @@ nav {
 }
 
 
+/* expertise */
+
+.expertise_title{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.expertise_title h3{
+    color: #039F4E;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.expertise_title h2{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.expertise .expertise_container{
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 4vw;
+    grid-row-gap: 3vw;
+    width: 80vw;
+    padding: 0 10vw;
+}
 
 
+.expertise_container .front_truck{
+    grid-column: 2;
+    grid-row: 1/4;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.expertise_container .expertise_item1{
+    grid-area: 2/1;
+}
+
+
+.expertise_container .expertise_item2{
+    grid-area: 2/3;
+}
+
+.expertise_container .expertise_item3{
+    grid-area: 3/1;
+}
+
+.expertise_container .expertise_item4{
+    grid-area: 3/3;
+}
+
+.expertise_container .expertise_item5{
+    grid-column: 1/4;
+    grid-row: 4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.expertise_item5 .expertise_text5{
+
+    width: 50%; 
+}
+
+.expertise_item1, .expertise_item3{
+    text-align: right;
+}
 
 
 
@@ -455,7 +537,7 @@ nav {
 
 
 @media screen and (max-width:1440px) {
-    nav{
+    /* nav{
         display: none;
-    }
+    } */
 }
