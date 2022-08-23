@@ -21,3 +21,7 @@ Création de la div sur les informations de l'entreprise et ajout d'une ombre su
 ## Etape 5
 
 Creation de la div sur les chiffres important et de transport society
+
+## Etape 6
+
+Creation de la div full services !
