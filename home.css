@@ -674,19 +674,17 @@ nav {
 
 .map_container{
     margin-top: 10vh;
-    height: 55vh;
     display: flex;
 }
 
 .map_container #map{
-    height: 100%;
+    z-index: 1;
     width: 70%;
 }
 
 
 .map_container .information{
     padding-left:3vw;
-    width: 30%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -708,11 +706,67 @@ nav {
     padding-left: 1vw;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 0px;
 }
+
+/* footer */
+
+footer .legal_infos{
+    display: flex;
+    height: 25vh;
+    padding-left: 3vw;
+    align-items: center;
+}
+
+.legal_infos .logo_text_footer{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 8vw 0 0;
+}
+
+.legal_infos .logo_text{
+    margin: 0;
+}
+.legal_infos .logo{
+    width: 98px;
+}
+
+.legal_infos .legal_description p{
+    width: 90%;
+    font-size: 12px;
+    line-height: 25px;
+}
+footer .other_infos{
+    align-items: center;
+    display: flex;
+    background-color: black;
+    height: 10vh;
+}
+
+.other_infos .text {
+    color: white;
+    padding-left: 3vw;
+}
+
+
+
+
 @media screen and (max-width:1440px) {
     /* header image camion */
     .full_service_container .button{
         transform:translateY(5vh);
+        width: 300px;
     }
+
+    /* full service */
+    .full_service .full_service_container{
+        padding:6vh 51vw;
+    }
+
     /* contactus */
     .contact .info{
         width: 70%;
