@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transport society</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/> <!-- pour que la map soit fonctionnelle -->
 </head>
 
 <body>
@@ -275,11 +278,42 @@
                     <div class="submit">
                         <input class="submit_button" type="submit" value="Submit">
                     </div>
-              
-                
-                
+                </div>
             </form>
         </div>
     </div>
+    <div class="map_container">
+        <div class="information">
+            <div class="information_contact">
+                <h2>Our agencies in South Africa</h2>
+                <p>
+                    Contact : Jacobus Van Niekerk
+                    Telephone: +27 67 674 0573
+                </p>
+            </div>
+            <div class="information_item">
+                <h2>Johannesburg</h2>
+                <p>99 Skew Road, 1459, Boksburg, Gauteng</p>
+            </div> 
+            <div class="information_item" id="Durban">
+                <h2>Durban</h2>
+                <p>Unit 4b, 50 Moreland Drive, Rinaldo Industrial Park, Redhill 
+                    4071, Durban, KZN</p>
+            </div>
+            <div class="information_item">
+                <h2>Cape Town</h2>
+                <p>
+                    111 Kruis Road, Brackenfell, 
+                    7560, Cape Town, Western Cape
+                </p>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <!-- fichier pour la map (javascript) -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+    <script src="index.js"></script>
 </body>
 </html>
