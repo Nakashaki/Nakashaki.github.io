@@ -29,3 +29,7 @@ Création de la div full services !
 ## Etape 7
 
 Création de la div contact us
+
+## Etape 8
+
+Création de la carte avec comme vidéo de référence https://www.youtube.com/watch?v=xxuTFUWA9Nk
