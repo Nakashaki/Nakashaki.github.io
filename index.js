@@ -1,14 +1,23 @@
 var map = L.map("map").setView([-29.609988, 28.233608], 5);
-var Stadia_OSMBright = L.tileLayer(
-  "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png",
+// var Stadia_OSMBright = L.tileLayer(
+//   "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png",
+//   {
+//     maxZoom: 20,
+//     attribution:
+//       '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+//   }
+
+// );
+var OpenStreetMap_Mapnik = L.tileLayer(
+  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
   {
-    maxZoom: 20,
+    maxZoom: 19,
     attribution:
-      '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }
 );
 
-Stadia_OSMBright.addTo(map);
+OpenStreetMap_Mapnik.addTo(map);
 
 var johannesburg = L.marker([-26.194731, 28.27999]).addTo(map);
 var durban = L.marker([-29.761753, 31.026276]).addTo(map);
